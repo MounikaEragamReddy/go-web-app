@@ -24,7 +24,7 @@ jobs:
 
       - name: build
         run: |
-          go mod init
+          go mod init github.com/MounikaEragamReddy/go-web-app
           go build -o go-web-app
       
       - name: test
