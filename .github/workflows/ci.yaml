@@ -1,3 +1,6 @@
+# This is a GitHub Actions workflow file for a Go web application.
+# It defines a CI/CD pipeline that runs on pushes to the main branch, excluding certain paths.
+# The pipeline consists of several jobs:
 name: CI
 on:
   push:
@@ -11,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Chekcout Code
+      - name: Chekcout Code v2
         uses: actions/checkout@v2
 
       - name: setup Go 1.22
